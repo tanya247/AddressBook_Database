@@ -45,3 +45,6 @@ DESCRIBE addressbook;
 
 #UC7
  SELECT COUNT(City), COUNT(State) FROM addressbook;
+
+#UC8
+  SELECT City FROM addressbook ORDER BY First_Name ASC;
