@@ -37,3 +37,8 @@ DESCRIBE addressbook;
  DELETE FROM addressbook where First_Name = 'Tanya';
 
  SELECT * FROM addressbook;
+
+#UC6
+ SELECT City, State FROM addressbook where First_Name = 'Shruti';
+ 
+ SELECT * FROM addressbook;
