@@ -32,3 +32,8 @@ DESCRIBE addressbook;
  UPDATE addressbook SET Address = 'Sattiwara,hapur' where First_Name = 'Tanya';
  
  SELECT * FROM addressbook;
+
+#UC5
+ DELETE FROM addressbook where First_Name = 'Tanya';
+
+ SELECT * FROM addressbook;
