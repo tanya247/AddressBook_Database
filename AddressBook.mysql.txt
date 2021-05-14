@@ -17,4 +17,11 @@ CREATE TABLE addressbook
  Email            Varchar(150) NOT NULL,
  Mobile_No        Varchar(10) NOT NULL
 );
+
 DESCRIBE addressbook;
+
+#UC3
+ INSERT INTO addressbook (First_name, Last_name, Address, City, State, Email, Mobile_No) VALUES
+ ('Tanya', 'Kansal', '25 sattiwara hapur' , 'hapur', 'UP', 'tanyakansal238@gmail.com', '9870652059'),
+ ('Shruti', 'Verma' , 'kanpur', 'Kanpur', 'UP', 'shrutiverma2105@gmail.com', '8547963275'),
+ ('Tanvi', 'Sharma', 'ABES Ghaziabad', 'Ghaziabad', 'UP', 'tanvisharma854@gmail.com', '7469823514');
