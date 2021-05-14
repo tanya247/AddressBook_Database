@@ -5,3 +5,16 @@
 show DATABASES;
 CREATE addressbook_service;
 USE addressbook_service;
+
+#UC2
+CREATE TABLE addressbook
+(
+ First_Name       Varchar(50) NOT NULL,
+ Last_Name        Varchar(50) NOT NULL,
+ Address          Varchar(150) NOT NULL,
+ City             Varchar(150) NOT NULL,
+ State            Varchar(150) NOT NULL,
+ Email            Varchar(150) NOT NULL,
+ Mobile_No        Varchar(10) NOT NULL
+);
+DESCRIBE addressbook;
