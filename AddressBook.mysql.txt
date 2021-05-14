@@ -25,3 +25,10 @@ DESCRIBE addressbook;
  ('Tanya', 'Kansal', '25 sattiwara hapur' , 'hapur', 'UP', 'tanyakansal238@gmail.com', '9870652059'),
  ('Shruti', 'Verma' , 'kanpur', 'Kanpur', 'UP', 'shrutiverma2105@gmail.com', '8547963275'),
  ('Tanvi', 'Sharma', 'ABES Ghaziabad', 'Ghaziabad', 'UP', 'tanvisharma854@gmail.com', '7469823514');
+
+ SELECT * FROM addressbook;
+
+#UC4
+ UPDATE addressbook SET Address = 'Sattiwara,hapur' where First_Name = 'Tanya';
+ 
+ SELECT * FROM addressbook;
