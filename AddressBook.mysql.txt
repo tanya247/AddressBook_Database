@@ -42,3 +42,6 @@ DESCRIBE addressbook;
  SELECT City, State FROM addressbook where First_Name = 'Shruti';
  
  SELECT * FROM addressbook;
+
+#UC7
+ SELECT COUNT(City), COUNT(State) FROM addressbook;
