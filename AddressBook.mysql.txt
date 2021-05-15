@@ -48,3 +48,25 @@ DESCRIBE addressbook;
 
 #UC8
   SELECT City FROM addressbook ORDER BY First_Name ASC;
+
+#UC9
+ INSERT INTO addressbook (First_Name, Last_Name, Address, City, State, Email, Mobile_No) Values
+ ('Prashant','Kumar','chibramau','kannuj','UP','prashantkumar@gmail.com','8547961235'),
+ ('Sandip', 'Chauhan','ghaziabad','Ghaziabad','UP','s876895@gmail.com','8745967842'),
+ ('Ankur','Singh','karolbagh','Delhi','Delhi','anksingh@gmail.com','8745219653');
+
+ SELECT * FROM addressbook;
+
+ ALTER TABLE addressbook ADD Type Varchar(150) NOT NULL AFTER Last_Name;
+
+ DESCRIBE addressbook;
+
+ UPDATE addressbook SET Type="Family" where First_Name='Prashant';
+ UPDATE addressbook SET Type="Family" where First_Name='Ankur';
+ UPDATE addressbook SET Type="Family" where First_Name='Shruti';
+ UPDATE addressbook SET Type="Friend" where First_Name='Tanvi';
+ UPDATE addressbook SET Type="Friend" where First_Name='Sandip';
+ UPDATE addressbook SET Type="Friend" where First_Name='Poonam';
+
+ SELECT * FROM addressbook;
+
