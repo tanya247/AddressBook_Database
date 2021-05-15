@@ -70,3 +70,5 @@ DESCRIBE addressbook;
 
  SELECT * FROM addressbook;
 
+#UC10
+ SELECT count(*),Type from addressbook group by Type;
