@@ -15,7 +15,8 @@ CREATE TABLE addressbook
  City             Varchar(150) NOT NULL,
  State            Varchar(150) NOT NULL,
  Email            Varchar(150) NOT NULL,
- Mobile_No        Varchar(10) NOT NULL
+ Mobile_No        Varchar(10) NOT NULL,
+ PRIMARY KEY(Email)
 );
 
 DESCRIBE addressbook;
@@ -77,3 +78,15 @@ DESCRIBE addressbook;
  INSERT INTO addressbook (First_Name, Last_Name, Type, Address, City, State, Email, Mobile_No) Values
  ('Prashu','Kumar','Friend','Kannuj','kanpur','UP','pranshur@gmail.com','8545612354'),
  ('Prashu','Kumar','Family','Kannuj','kanpur','UP','pranshur@gmail.com','8545612354');
+#not possible 
+
+#UC12
+ create table contactlist_table select First_Name,Last_Name,Email from addressbook;
+ select * from contactlist_table;
+
+ create table address_table select Email,Address,City,State from addressbook;
+ Select * from address_table;
+
+ create table contacttable select Email,Type,Mobile_No from addressbook;
+ Select * from contacttable;
+ 
